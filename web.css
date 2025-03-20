@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {}
+
+.nav-list li {}
+
+.nav-list li a {}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color:black ;
+    
+    
+}
+i{
+    height: 200px;
+    width: 200px;
+}
+i {
+    width: 100px;
+    height: 100px;
+    background-color: #744242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+i:hover  {
+    scale: 1.2;
+    color: #f1f1f1;
+}
+i:before{
+    background-color: blue;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    top: 30%;
+    transform: rotate(45deg);
+
+}
+i:hover:before {
+    animation: slide 0.75s forwards;
+
+
+}
+@keyframes slide{
+    50%{
+        left: 10%;
+        top: -40%;
+
+    }
+    100%{
+        left: -15%;
+        top: -15%;
+    }
+
+}
